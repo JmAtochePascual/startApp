@@ -60,6 +60,14 @@ select {
   font: inherit;
 }
 
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 [class*="-container"] {
   width: min(90%, 120rem);
   margin-inline: auto;
@@ -73,10 +81,30 @@ select {
   padding: 0.8rem 1.6rem;
   border-radius: 0.4rem;
   color: var(--white);
-  background-color: var(--color-primary);
   transition: background-color 0.3s ease;
 
-  &:hover {
-    background-color: var(--color-primary-hover);
+  &.primary {
+    background-color: var(--color-primary);
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--color-primary-hover);
+    }
+  }
+
+  &.transparent {
+    background-color: rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &.secondary {
+    background-color: var(--color-secondary);
+
+    &:hover {
+      background-color: var(--color-secondary-hover);
+    }
   }
 }
