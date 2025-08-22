@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./assets/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf")
+    format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --font-family: "Nunito Sans", sans-serif;
+  --color-background: #e6ecf8;
+  --color-primary: #2566e3;
+  --color-primary-hover: #1d57c6;
+  --color-secondary: #061533;
+  --white: #fff;
+}
