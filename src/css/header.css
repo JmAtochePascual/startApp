@@ -49,27 +49,54 @@
 /* Hero */
 
 .hero {
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+
+  @media screen and (min-width: 768px) {
+    background: unset;
+    background: unset;
+  }
+
   .hero__content {
-    padding: 4rem;
+    padding: 2rem 0;
+    display: grid;
+    gap: 2.4rem;
     border-radius: 0.8rem;
 
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 2.4rem;
-    background: #2a7b9b;
-    background: linear-gradient(
-      90deg,
-      rgba(42, 123, 155, 1) 0%,
-      rgba(87, 199, 133, 1) 50%,
-      rgba(237, 221, 83, 1) 100%
-    );
+    @media screen and (min-width: 768px) {
+      padding: 4rem;
+      grid-template-columns: 3fr 2fr;
+      gap: 1.6rem;
+
+      background: #2a7b9b;
+      background: linear-gradient(
+        90deg,
+        rgba(42, 123, 155, 1) 0%,
+        rgba(87, 199, 133, 1) 50%,
+        rgba(237, 221, 83, 1) 100%
+      );
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 12rem;
+    }
   }
 
   .hero__info {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     color: var(--white);
+
+    @media screen and (min-width: 768px) {
+      max-width: 50rem;
+      gap: 1.6rem;
+    }
   }
 
   .hero__text {
@@ -78,23 +105,44 @@
   }
 
   .hero__title {
-    font-size: 6.4rem;
+    font-size: 3.2rem;
     font-weight: 900;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 5.2rem;
+    }
   }
 
   .hero__subtitle {
-    font-size: 2.4rem;
+    font-size: 2rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 2.4rem;
+    }
   }
 
   .hero__buttons {
     display: flex;
+    flex-direction: column;
     gap: 1.2rem;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 2rem;
+    }
   }
 
   .hero__status {
     display: flex;
-    align-items: center;
-    gap: 2.4rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.6rem;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: start;
+      gap: 2rem;
+    }
   }
 
   .hero__status-text {
@@ -102,8 +150,11 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: 0.8rem;
-    font-size: 2rem;
     font-weight: 600;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.8rem;
+    }
 
     svg {
       width: 2rem;
@@ -116,8 +167,11 @@
   }
 
   .hero__wrapper {
-    position: absolute;
     min-width: 100%;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+    }
   }
 
   .hero__show {
@@ -159,12 +213,20 @@
 /* Características */
 
 .caracteristicas {
-  padding-top: 16rem;
+  padding-top: 6rem;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 12rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 16rem;
+  }
 
   .caracteristicas__content {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
   }
 
   .caracteristicas__text {
@@ -176,8 +238,12 @@
   }
 
   .caracteristicas__title {
-    font-size: 4.8rem;
+    font-size: 3.2rem;
     font-weight: 900;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 5.2rem;
+    }
   }
 
   .caracteristicas__subtitle {
@@ -186,8 +252,13 @@
 
   .caracteristicas__group {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1.6rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-rows: unset;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   .caracteristicas__images {
@@ -232,7 +303,12 @@
     svg {
       width: 4.8rem;
       height: 4.8rem;
+      display: none;
       color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
     }
   }
 
@@ -255,7 +331,15 @@
 /* Precios */
 
 .precios {
-  padding-block: 16rem;
+  padding-block: 6rem;
+
+  @media screen and (min-width: 768px) {
+    padding-block: 12rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-block: 16rem;
+  }
 
   .precios__content {
     display: flex;
@@ -272,8 +356,12 @@
   }
 
   .precios__title {
-    font-size: 4.8rem;
+    font-size: 3.2rem;
     font-weight: 900;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 5.2rem;
+    }
   }
 
   .precios__subtitle {
@@ -282,7 +370,7 @@
 
   .precios__cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     gap: 1.6rem;
   }
 
@@ -290,9 +378,11 @@
     padding: 2.4rem 1.2rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 2.4rem;
     border-radius: 0.4rem;
     background-color: var(--white);
+    box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.1);
 
     &.precios__card--active {
       color: var(--white);
@@ -351,14 +441,29 @@
 
   .footer__content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
     gap: 4rem;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .footer__logo {
+    width: 10rem;
   }
 
   .footer__nav {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
   }
 
   .footer__link {
