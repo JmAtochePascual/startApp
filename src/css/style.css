@@ -197,15 +197,15 @@
   .hero__slyder-button {
     width: 2.4rem;
     height: 0.4rem;
-    background-color: var(--white);
-    opacity: 0.2;
+    border-radius: 0.8rem;
+    background-color: #000;
 
     &:hover {
       opacity: 0.5;
     }
 
     &.active {
-      opacity: 1;
+      background-color: var(--color-primary);
     }
   }
 }

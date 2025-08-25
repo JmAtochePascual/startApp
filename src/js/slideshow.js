@@ -1,8 +1,9 @@
 const heroWrapper = document.getElementById("heroWrapper");
 const heroShow = document.getElementById("heroShow");
 const heroSlyderButtons = document.getElementById("heroSlyderButtons");
+let currentSlide = 1;
 
-const siguienteSlide = () => {
+const slideAnimation = () => {
   const firstSlide = heroShow.children[0];
   const sizeTranslate = firstSlide.offsetWidth;
   const timeTransition = 500;
@@ -15,6 +16,16 @@ const siguienteSlide = () => {
     heroShow.style.transition = "none";
     heroShow.style.transform = `translateX(0)`;
   }, timeTransition);
+
+  if (currentSlide < heroShow.children.length) {
+    currentSlide++;
+  } else {
+    currentSlide = 1;
+  }
+
+  heroSlyderButtons.querySelector(".active").classList.remove("active");
+  heroSlyderButtons.children[currentSlide - 1].classList.add("active");
+
 }
 
-setInterval(siguienteSlide, 3000);
+setInterval(slideAnimation, 5000);
