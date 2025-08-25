@@ -22,6 +22,7 @@ StartApp es una landing page moderna y responsiva para una aplicación de gesti�
 - **HTML:** Lenguaje de marcado para estructurar el contenido de la página.
 - **CSS:** Lenguaje de estilos utilizado para definir la presentación visual y el diseño responsivo.
 - **JavaScript:** Lenguaje de programación que permite agregar interactividad y dinamismo.
+- **Vite:** Herramienta de desarrollo web.
 
 ## Estructura del proyecto
 
@@ -38,8 +39,6 @@ StartApp es una landing page moderna y responsiva para una aplicación de gesti�
 
 ## Uso
 
-> Nota: No requiere instalación de dependencias. Solo abra el archivo `index.html` en un navegador.
-
 Para visualizar el proyecto localmente, sigue estos pasos:
 
 1. Clona este repositorio:
@@ -54,7 +53,19 @@ https://github.com/JmAtochePascual/startApp.git
 cd startApp
 ```
 
-3. Abre el archivo `index.html` en tu navegador web preferido
+3. Instala las dependencias:
+
+```
+npm install
+```
+
+4. Ejecuta el proyecto:
+
+```
+npm run dev
+```
+
+5. Abre tu navegador y navega a la URL que se muestra en la terminal (generalmente http://localhost:5173)
 
 ## Contribución
 
