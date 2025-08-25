@@ -3,3 +3,4 @@ import "./css/variables.css";
 import "./css/reset.css";
 import "./css/style.css";
 import "./js/slideshow.js";
+import "./js/cards.js";
