@@ -101,15 +101,27 @@
         <div class="hero__slyder">
           <div class="hero__wrapper" id="heroWrapper">
             <div class="hero__show" id="heroShow">
-              <img src="./assets/img/1.png" alt="imagen 1 de la app" title="imagen 1 de la app" class="hero__img">
-              <img src="./assets/img/2.png" alt="imagen 2 de la app" title="imagen 2 de la app" class="hero__img">
-              <img src="./assets/img/3.png" alt="imagen 3 de la app" title="imagen 3 de la app" class="hero__img">
+              <picture class="hero__picture">
+                <source srcset="./assets/img/1.avif" type="image/avif">
+                <source srcset="./assets/img/1.webp" type="image/webp">
+                <img src="./assets/img/1.png" alt="imagen 1 de la app" title="imagen 1 de la app" class="hero__img">
+              </picture>
+              <picture class="hero__picture">
+                <source srcset="./assets/img/2.avif" type="image/avif">
+                <source srcset="./assets/img/2.webp" type="image/webp">
+                <img src="./assets/img/2.png" alt="imagen 2 de la app" title="imagen 2 de la app" class="hero__img">
+              </picture>
+              <picture class="hero__picture">
+                <source srcset="./assets/img/3.avif" type="image/avif">
+                <source srcset="./assets/img/3.webp" type="image/webp">
+                <img src="./assets/img/3.png" alt="imagen 3 de la app" title="imagen 3 de la app" class="hero__img">
+              </picture>
             </div>
 
             <div class="hero__slyder-buttons" id="heroSlyderButtons">
-              <button class="hero__slyder-button active"></button>
-              <button class="hero__slyder-button"></button>
-              <button class="hero__slyder-button"></button>
+              <button class="hero__slyder-button active" aria-label="botón 1">primer botón</button>
+              <button class="hero__slyder-button" aria-label="botón 2">segundo botón</button>
+              <button class="hero__slyder-button" aria-label="botón 3">tercer botón</button>
             </div>
           </div>
         </div>
@@ -125,14 +137,30 @@
 
         <div class="caracteristicas__group">
           <div class="caracteristicas__images" id="caracteristicasImages">
-            <img src="./assets/img/4.png" alt="imagen 4 de la app" title="imagen 4 de la app"
-              class="caracteristicas__img active" loading="lazy" data-id="1">
-            <img src="./assets/img/5.png" alt="imagen 5 de la app" title="imagen 5 de la app"
-              class="caracteristicas__img" loading="lazy" data-id="2">
-            <img src="./assets/img/6.png" alt="imagen 6 de la app" title="imagen 6 de la app"
-              class="caracteristicas__img" loading="lazy" data-id="3">
-            <img src="./assets/img/7.png" alt="imagen 7 de la app" title="imagen 7 de la app"
-              class="caracteristicas__img" loading="lazy" data-id="4">
+            <picture class="caracteristicas__picture">
+              <source srcset="./assets/img/4.avif" type="image/avif">
+              <source srcset="./assets/img/4.webp" type="image/webp">
+              <img src="./assets/img/4.png" alt="imagen 4 de la app" title="imagen 4 de la app"
+                class="caracteristicas__img active" loading="lazy" data-id="1">
+            </picture>
+            <picture class="caracteristicas__picture">
+              <source srcset="./assets/img/5.avif" type="image/avif">
+              <source srcset="./assets/img/5.webp" type="image/webp">
+              <img src="./assets/img/5.png" alt="imagen 5 de la app" title="imagen 5 de la app"
+                class="caracteristicas__img" loading="lazy" data-id="2">
+            </picture>
+            <picture class="caracteristicas__picture">
+              <source srcset="./assets/img/6.avif" type="image/avif">
+              <source srcset="./assets/img/6.webp" type="image/webp">
+              <img src="./assets/img/6.png" alt="imagen 6 de la app" title="imagen 6 de la app"
+                class="caracteristicas__img" loading="lazy" data-id="3">
+            </picture>
+            <picture class="caracteristicas__picture">
+              <source srcset="./assets/img/7.avif" type="image/avif">
+              <source srcset="./assets/img/7.webp" type="image/webp">
+              <img src="./assets/img/7.png" alt="imagen 7 de la app" title="imagen 7 de la app"
+                class="caracteristicas__img" loading="lazy" data-id="4">
+            </picture>
           </div>
 
           <div class="caracteristicas__cards" id="caracteristicasCards">
